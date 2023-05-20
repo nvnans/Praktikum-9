@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\SkillController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,6 @@ Route::get('/pasien', function () {
     return view('pasien');
 });
 
-Route::get('/form', [FormController::class, 'index']);
+Route::get('/skill', [SkillController::class, 'index']);
 
-Route::post('/hasil', [FormController::class, 'hasil']);
+Route::post('/skillhasil', [SkillController::class, 'skillhasil']);
